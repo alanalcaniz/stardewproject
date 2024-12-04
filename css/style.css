@@ -21,8 +21,16 @@ body{
     
     .header { 
         grid-area: 1 / 1 / 2 / 9; 
-        outline: 1px solid #c11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(102, 255, 102, 0.507);
     }
+
+h1{
+    color: white;
+}
+
     .mainleft { 
         grid-area: 2 / 1 / 6 / 3; 
         outline: 1px solid rgb(156, 34, 34);
@@ -31,6 +39,20 @@ body{
         align-items: center;
         justify-content: space-around;
         padding: 30px 0;
+    }
+
+    .mainleft p{
+        font-size: 28px;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: black;
+        text-decoration: none;
     }
 
     .boton-index{
@@ -50,18 +72,34 @@ body{
         display: flex;
         justify-content: start;
         align-items: start;
+        padding: 50px;
     }
 
     .logo{
-        min-width: 50px;
-        max-width: 700px;
+        width: 100%;
         object-fit: contain;
+        margin: auto;
     }
 
     .mainright { 
         grid-area: 2 / 7 / 6 / 9; 
-        outline: 1px solid rgb(37, 23, 23);
+        padding: 30px;
+        margin: 30px 10px;
+        background-color: rgba(136, 136, 255, 0.596);
+        border-radius: 40px;
     }
+
+    p{
+        margin: 30px 0;
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .mainright img{
+        width: 100%;
+        justify-content: center;
+    }
+
     .footer { 
         grid-area: 6 / 1 / 7 / 9; 
         background-color: #00000083;
