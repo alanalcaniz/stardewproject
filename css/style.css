@@ -30,10 +30,8 @@ body{
 h1{
     color: white;
 }
-
     .mainleft { 
         grid-area: 2 / 1 / 6 / 3; 
-        outline: 1px solid rgb(156, 34, 34);
         display: grid;
         flex-direction: column;
         align-items: center;
@@ -56,7 +54,7 @@ h1{
     }
 
     .boton-index{
-        width: 250px;
+        width: 300px;
         height: 100px;
         background-color: rgba(253, 198, 46, 0.767);
         display: flex;
@@ -64,7 +62,6 @@ h1{
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-
     }
 
     .maincenter { 
@@ -72,7 +69,25 @@ h1{
         display: flex;
         justify-content: start;
         align-items: start;
+        flex-direction: column;
         padding: 50px;
+        color: white;
+    }
+
+    .maincenter h2{
+        font-size: 60px;
+    }
+
+    .maincenter p{
+        font-size: 20px;
+    }
+
+    .maincenter ul{
+        padding: 20px 0;
+    }
+
+    .maincenter li{
+        font-size: 20px;
     }
 
     .logo{
@@ -96,8 +111,18 @@ h1{
     }
 
     .mainright img{
-        width: 100%;
+        width: 50%;
         justify-content: center;
+        align-items: center;
+        float: right;
+        flex-wrap: wrap;
+        padding: 30px 10px 10px 10px;
+        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.5));
+    }
+
+    .image-farm img{
+        width: 220px;
+        margin: 20px;
     }
 
     .footer { 
