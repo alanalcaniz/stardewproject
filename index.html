@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Buenas Xavi, aquest es el codi de la meua web, el primer que pots vore son el titul, favicon y link a la fulla de estils css-->
+     <!-- La pagina ha sigut feta tota desde 0, sense copiar codi ni gastar ia-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stardew Wiki</title>
+    <link rel="shortcut icon" href="img/mine/Diamond.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- En el body comencem amb la estructura de la web, es compon de un div (content) el cual el posem en grid y li afegim al interior 5 divs que els ajustarem
+     y ordenarem com a header, tres divs centrals y un footer amb el grid-area -->
     <div class="content">
         <div class="header">
             <h1>Web Presentación Stardew Valley Alan Alcañiz</h1>
         </div>
         <div class="mainleft">
+            <!-- Amb aquests botons podem accedir a les seguents subpagines-->
             <a href="granja.html"><div class="boton-index"><p>Granja</p></div></a>
             <a href="pueblo.html"><div class="boton-index"><p>Pueblo</p></div></a>
             <a href="mina.html"><div class="boton-index"><p>Mina</p></div></a>
@@ -21,9 +27,12 @@
             <img class="logo" src="img/Logo.png" alt="">
         </div>
         <div class="mainright">
+            <!-- En el meu cas no he gastat float, perque per a ser sincers xavi, float no es gasta per a maquetar desde fa 10 o 15 anys, el float actualment s'utilitza
+            per a situacions com aquesta que vols posar una imatge intercalada en el text -->
             <img src="img/conerned.png" alt="logo de concerned Ape">
             <p>ConcernedApe es el seudónimo de Eric Barone, el desarrollador independiente detrás de Stardew Valley, uno de los videojuegos más populares del género simulador de granjas. Eric diseñó, programó, escribió y compuso toda la música del juego él mismo, trabajando en ello durante más de cuatro años antes de su lanzamiento en 2016. La atención al detalle y el cariño puesto en Stardew Valley lo han convertido en un fenómeno cultural. Actualmente, Eric está desarrollando su próximo proyecto, Haunted Chocolatier, que también promete ser un éxito.</p>
         </div>
+        <!-- Totes les demes subpágines son exactament iguals canviant el que sols hi han 4 divs y no 5 amb la informació de concernedape-->
         <div class="footer">
             <p>2024 - Alan Alcañiz - Projecto 1CFGS</p>
         </div>

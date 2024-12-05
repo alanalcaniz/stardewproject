@@ -1,16 +1,22 @@
 *{
+    /* El * en els estils serveix per a aplicaro a tot, lo que hem fet ha sigut posar margin i padding 0 per a llevar les xicotetes separacions que 
+    hi han per defecte i afegit el box sizing border box per a que siga mes senzill manipular els divs */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
+    /* Hem afegit una image de fons i el estil de lletra per a tota la página va a ser arial */
     background-image: url(../img/background.png);
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
+    /* este es el contenedor on estan tots els divs que gastarem per a fer la página, a aquest li posarem display grid i crearém 6 files donantli una mida mes petita
+    a la primera i la última gastant el fr, que es responsiva, i després crearém 8 columnes iguals que, aço no vol dir que es vaigen a vore 8 columnes en la web
+    ja que després escolirem cada div en quina fila i quina columns comença y acaba*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
@@ -20,6 +26,7 @@ body{
     }
     
     .header { 
+        /* así escollim en quina fila i columna acaba i li posem flex, justify-content y align-items per a que el text estiga centrat en el div  */
         grid-area: 1 / 1 / 2 / 9; 
         display: flex;
         justify-content: center;
@@ -31,6 +38,7 @@ h1{
     color: white;
 }
     .mainleft { 
+        /* totes aquestes característiques son les que tenen aplicades el div de la esquerre per a poder tindre una columns de botóns amb els que navegar*/
         grid-area: 2 / 1 / 6 / 3; 
         display: grid;
         flex-direction: column;
@@ -54,6 +62,8 @@ h1{
     }
 
     .boton-index{
+        /* aquest es el estil que he gastat per a fer els botons, gastar flex es una ferramenta casi necesaria per a formatar la página correctament i que quede 
+        estéticament bonica */
         width: 300px;
         height: 100px;
         background-color: rgba(253, 198, 46, 0.767);
@@ -65,6 +75,7 @@ h1{
     }
 
     .maincenter { 
+        /* aquest es el div del mig que per a les subpágines cambiarém un poc el grid-area per a que ocupe també el espai del mainright */
         grid-area: 2 / 3 / 6 / 7; 
         display: flex;
         justify-content: start;
@@ -97,6 +108,7 @@ h1{
     }
 
     .mainright { 
+        /* Aquests son els estils del div de la dreta*/
         grid-area: 2 / 7 / 6 / 9; 
         padding: 30px;
         margin: 30px 10px;
@@ -111,13 +123,14 @@ h1{
     }
 
     .mainright img{
+        /* Aquests son els estils la imagen del div de la dreta, li he posat el float per a que se inserte al costat del text sense que es trenque res i després
+        puga continuar */
         width: 50%;
         justify-content: center;
         align-items: center;
         float: right;
         flex-wrap: wrap;
         padding: 30px 10px 10px 10px;
-        filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.5));
     }
 
     .image-farm img{
