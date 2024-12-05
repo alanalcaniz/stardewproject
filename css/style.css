@@ -74,6 +74,10 @@ h1{
         margin: 10px 0;
     }
 
+    .boton-index:hover{
+        color: white;
+    }
+
     .maincenter { 
         /* aquest es el div del mig que per a les subpágines cambiarém un poc el grid-area per a que ocupe també el espai del mainright */
         grid-area: 2 / 3 / 6 / 7; 
